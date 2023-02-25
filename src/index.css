@@ -54,3 +54,23 @@ nav .icon {
     display: flex;
     width: 100%;
 }
+
+.ticket-card #link {
+    display: flex;
+    width: 100%;
+}
+
+/* > * basically means, everything in here is gonna do the thing */
+.ticket-card #link > * {
+    background-color: rgb(221,221,221);
+    margin: 2px;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ticket-card .ticket-color {
+    width: 15px;
+    margin: 2px;
+}

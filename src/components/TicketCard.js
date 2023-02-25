@@ -8,14 +8,14 @@ import DeleteBlock from "./DeleteBlock"
 const TicketCard = ({ color, ticket }) => {
     return (
         <div className="ticket-card">
-            {/* <Link> */}
-                <div className="ticket-color"></div>
+           <div className="ticket-color"></div>
+           <Link to={`/ticket/${ticket.documentId}`}id="link">
                 <h3>{ticket.title}</h3>
                 <AvatarDisplay/>
                 <StatusDisplay/>
                 <PriorityDisplay/>
                 <ProgressDisplay/>
-            {/* </Link> */}
+            </Link>
             <DeleteBlock/>
         </div>
     )
